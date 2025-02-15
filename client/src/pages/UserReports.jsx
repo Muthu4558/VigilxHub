@@ -16,7 +16,7 @@ const UserReports = () => {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const response = await axios.get(`https://tm-main-server.onrender.com/api/daily-reports/${userId}`);
+        const response = await axios.get(`https://vigilxhub-backend.onrender.com/api/daily-reports/${userId}`);
         const sortedReports = response.data.sort((a, b) =>
           new Date(b.createdAt || b.dateTime) - new Date(a.createdAt || a.dateTime)
         );
@@ -32,7 +32,7 @@ const UserReports = () => {
 
   const handleRemarkSubmit = async (reportId, remark) => {
     try {
-      await axios.put(`https://tm-main-server.onrender.com/api/daily-reports/${reportId}`, { remark });
+      await axios.put(`https://vigilxhub-backend.onrender.com/api/daily-reports/${reportId}`, { remark });
 
       setReports((prevReports) =>
         prevReports.map((report) =>
@@ -67,7 +67,7 @@ const UserReports = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`https://tm-main-server.onrender.com/api/user/${userId}`);
+        const response = await fetch(`https://vigilxhub-backend.onrender.com/api/user/${userId}`);
         const data = await response.json();
 
         if (response.ok) {
