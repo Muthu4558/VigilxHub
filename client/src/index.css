@@ -23,7 +23,7 @@
   height: 100px;
   border-radius: 50%;
   background: rgba(147, 149, 53, 0.671);
-  box-shadow: 4px -40px 60px 5px #229ea6 inset;
+  box-shadow: 4px -40px 60px 5px red inset;
 }
 
 .rotate-in-up-left {
@@ -110,19 +110,19 @@
 @keyframes pulse {
   0% {
     transform: scale(0.8);
-    background-color: #229ea6;
+    background-color: red;
     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
   }
 
   50% {
     transform: scale(1.2);
-    background-color: #229ea6;
+    background-color: red;
     box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
   }
 
   100% {
     transform: scale(0.8);
-    background-color: #229ea6;
+    background-color: red;
     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
   }
 }
