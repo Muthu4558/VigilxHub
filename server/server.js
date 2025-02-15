@@ -17,7 +17,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://tm-main-client.onrender.com",
+    origin: "https://vigilxhub-frontend.onrender.com",
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
