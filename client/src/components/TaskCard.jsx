@@ -126,7 +126,7 @@ const TaskCard = ({ task }) => {
         <div className='w-full pb-2'>
           <button
             onClick={() => setOpen(true)}
-            className='flex gap-2 px-4 items-center text-sm bg-[#229ea6] rounded-2xl text-white p-2 font-semibold disabled:cursor-not-allowed'
+            className='flex gap-2 px-4 items-center text-sm bg-red-600 rounded-2xl text-white p-2 font-semibold disabled:cursor-not-allowed'
           >
             <IoMdAdd className='text-lg' />
             <span>ADD MORE TASK</span>
