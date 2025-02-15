@@ -169,7 +169,7 @@ const AddUser = ({ open, setOpen, userData }) => {
             {user?.isAdmin && (
               <Button
                 type="submit"
-                className="bg-[#229ea6] px-8 text-sm font-semibold text-white sm:w-auto"
+                className="bg-red-600 px-8 text-sm font-semibold text-white sm:w-auto"
                 label="Submit"
               />
             )}

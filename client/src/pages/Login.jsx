@@ -8,7 +8,7 @@ import { useLoginMutation } from "../redux/slices/api/authApiSlice";
 import { setCredentials } from "../redux/slices/authSlice";
 import { toast } from "sonner";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import Logo from "../assets/images/logo2.png";
+import Logo from "../assets/images/logo3.png";
 
 const Login = () => {
   const { user } = useSelector((state) => state.auth);
@@ -66,7 +66,7 @@ const Login = () => {
         {/* Left Side */}
         <div className="h-full w-full lg:w-2/3 flex flex-col items-center justify-center">
           <div className="w-full md:max-w-lg 2xl:max-w-3xl flex flex-col items-center justify-center gap-5 md:gap-y-10 2xl:-mt-20">
-            <span className="flex gap-1 py-1 px-3 border rounded-full text-sm md:text-base border-gray-300 text-gray-600">
+            <span className="flex gap-1 py-1 px-3 border rounded-full text-sm md:text-base border-red-400 text-gray-600">
               Manage all your tasks in one place!
             </span>
             <img  className="w-48 md:w-full" src={Logo} alt="Nizcare-Logo" />
@@ -83,7 +83,7 @@ const Login = () => {
             className="form-container w-full md:w-[400px] flex flex-col gap-y-8 bg-white px-10 pt-14 pb-14"
           >
             <div className="">
-              <p className="text-[#229ea6] text-3xl font-bold text-center">
+              <p className="text-red-600 text-3xl font-bold text-center">
                 Welcome !
               </p>
               <p className="text-center text-base text-gray-700 "></p>
@@ -129,7 +129,7 @@ const Login = () => {
               <Button
                 type="submit"
                 label={isLoading ? "Loading..." : "Submit"}
-                className="w-full h-10 bg-[#229ea6] text-white rounded-full"
+                className="w-full h-10 bg-red-600 text-white rounded-full"
               />
             </div>
           </form>

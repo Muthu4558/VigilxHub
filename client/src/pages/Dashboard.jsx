@@ -110,7 +110,7 @@ const UserTable = ({ users }) => {
     <tr className='border-b border-gray-200  text-gray-600 hover:bg-gray-400/10'>
       <td className='py-2'>
         <div className='flex items-center gap-3'>
-          <div className='w-9 h-9 rounded-full text-white flex items-center justify-center text-sm bg-[#229ea6]'>
+          <div className='w-9 h-9 rounded-full text-white flex items-center justify-center text-sm bg-red-600'>
             <span className='text-center'>{getInitials(user?.name)}</span>
           </div>
 
@@ -175,8 +175,8 @@ const Dashboard = () => {
       label: "TOTAL TASK",
       total: data?.totalTasks || 0,
       icon: <FaNewspaper />,
-      bg: "bg-blue-600",
-      textColor: "text-violet-600",
+      bg: "bg-red-600",
+      textColor: "text-red-600",
     },
     {
       _id: "2",

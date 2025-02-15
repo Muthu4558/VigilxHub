@@ -122,7 +122,7 @@ const ChangePassword = ({ open, setOpen }) => {
             <>
               <Button
                 type="submit"
-                className="bg-[#229ea6] px-6 py-2 text-sm font-semibold text-white rounded-md"
+                className="bg-red-600 px-6 py-2 text-sm font-semibold text-white rounded-md"
                 label="Save"
               />
               <button

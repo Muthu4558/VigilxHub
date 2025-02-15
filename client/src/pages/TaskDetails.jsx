@@ -356,7 +356,7 @@ const Activities = ({ activity, id, refetch }) => {
               type='button'
               label='Submit'
               onClick={handleSubmit}
-              className='bg-[#229ea6] text-white rounded'
+              className='bg-red-600 text-white rounded'
             />
           )}
         </div>

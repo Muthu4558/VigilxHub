@@ -128,7 +128,7 @@ const UserReports = () => {
       <div className="flex justify-end mb-4">
           <button
             onClick={handleDownload}
-            className="bg-[#229ea6] text-white px-4 py-2 rounded hover:bg-[#197d7e]"
+            className="bg-red-600 text-white px-4 py-2 rounded hover:bg-[#197d7e]"
           >
             Download
           </button>
@@ -184,7 +184,7 @@ const UserReports = () => {
                           value={report.newRemark || ''}
                         ></textarea>
                         <button
-                          className="mt-2 bg-[#229ea6] text-white px-3 py-1 rounded hover:bg-[#197d7e]"
+                          className="mt-2 bg-[#229ea6] text-white px-3 py-1 rounded hover:bg-red-400"
                           onClick={() =>
                             handleRemarkSubmit(report._id, report.newRemark || '')
                           }

@@ -173,7 +173,7 @@ const Table = ({ tasks = [] }) => {
             </div>
             <button
               onClick={clearFilters}
-              className="bg-[#229ea6] text-white font-semibold px-4 py-1 mt-5 rounded"
+              className="bg-red-600 text-white font-semibold px-4 py-1 mt-5 rounded"
             >
               Clear
             </button>
@@ -197,7 +197,7 @@ const Table = ({ tasks = [] }) => {
             <div>
               <button
                 onClick={clearFilters1}
-                className="bg-[#229ea6] text-white font-semibold px-4 py-1 mt-5 rounded"
+                className="bg-red-600 text-white font-semibold px-4 py-1 mt-5 rounded"
               >
                 Clear
               </button>
@@ -206,7 +206,7 @@ const Table = ({ tasks = [] }) => {
               <div>
                 <button
                   onClick={downloadExcel}
-                  className="bg-[#229ea6] text-white font-semibold px-4 py-1 rounded flex items-center gap-2"
+                  className="bg-red-600 text-white font-semibold px-4 py-1 rounded flex items-center gap-2"
                 >
                   <MdDownload />
                   Download

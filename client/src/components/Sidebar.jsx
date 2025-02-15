@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import { setOpenSidebar } from "../redux/slices/authSlice";
 import clsx from "clsx";
-import Logo from "../assets/images/logo2.png";
+import Logo from "../assets/images/logo3.png";
 
 const linkData = [
   {
@@ -83,8 +83,8 @@ const Sidebar = () => {
         to={el.link}
         onClick={closeSidebar}
         className={clsx(
-          "w-full lg:w-3/4 flex gap-2 px-3 py-2 rounded-full items-center text-gray-700 text-base hover:bg-[#229ea6]",
-          path === el.link.split("/")[0] ? "bg-[#229ea6] text-neutral-100" : ""
+          "w-full lg:w-3/4 flex gap-2 px-3 py-2 rounded-full items-center text-gray-700 text-base hover:bg-red-500",
+          path === el.link.split("/")[0] ? "bg-red-600 text-neutral-100" : ""
         )}
       >
         {el.icon}

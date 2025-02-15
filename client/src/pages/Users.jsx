@@ -216,7 +216,7 @@ const Users = () => {
       >
         <td className="p-2">
           <div className="flex items-center gap-3 text-blue-600">
-            <div className="w-9 h-9 rounded-full text-white flex items-center justify-center text-sm bg-[#229ea6]">
+            <div className="w-9 h-9 rounded-full text-white flex items-center justify-center text-sm bg-red-600">
               <span className="text-xs md:text-sm text-center">
                 {getInitials(user.name)}
               </span>
@@ -305,7 +305,7 @@ const Users = () => {
             <Button
               label="Add New User"
               icon={<IoMdAdd className="text-lg" />}
-              className="flex flex-row-reverse gap-1 items-center bg-[#229ea6] text-white rounded-md 2xl:py-2.5"
+              className="flex flex-row-reverse gap-1 items-center bg-red-600 text-white rounded-md 2xl:py-2.5"
               onClick={() => setOpen(true)}
             />
           )}
@@ -376,7 +376,7 @@ const Users = () => {
             </div>
             <Button
               label="Close"
-              className="mt-6 w-full py-2 px-4 bg-[#229ea6] text-white font-semibold rounded-md shadow-md transition-all"
+              className="mt-6 w-full py-2 px-4 bg-red-600 text-white font-semibold rounded-md shadow-md transition-all"
               onClick={() => setDetailsPopup({ open: false, details: null })}
             />
           </div>

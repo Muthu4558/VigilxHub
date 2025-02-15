@@ -71,7 +71,7 @@ const UserList = ({ setTeam, team }) => {
                           selected ? "font-medium" : "font-normal"
                         )}
                       >
-                        <div className='w-6 h-6 rounded-full text-white flex items-center justify-center bg-[#229ea6]'>
+                        <div className='w-6 h-6 rounded-full text-white flex items-center justify-center bg-red-600'>
                           <span className='text-center text-[10px]'>
                             {getInitials(user.name)}
                           </span>

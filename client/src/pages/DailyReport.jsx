@@ -168,7 +168,7 @@ const DailyReport = () => {
           />
           <div className="flex space-x-2">
 
-            <button type="submit" className="bg-[#229ea6] text-white px-4 py-2 rounded">
+            <button type="submit" className="bg-red-600 text-white px-4 py-2 rounded">
               {editingReport ? "Update" : "Submit"}
             </button>
             {editingReport && (

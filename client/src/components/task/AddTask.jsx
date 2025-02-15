@@ -212,7 +212,7 @@ const AddTask = ({ open, setOpen, task }) => {
                 <Button
                   type="submit"
                   label={isLoading ? "Loading..." : "Submit"}
-                  className="bg-[#229ea6] px-8 text-sm font-semibold text-white sm:w-auto"
+                  className="bg-red-600 px-8 text-sm font-semibold text-white sm:w-auto"
                 />
               )}
 

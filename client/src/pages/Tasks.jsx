@@ -74,11 +74,11 @@ const Tasks = () => {
                 type="date"
                 value={filterDate}
                 onChange={(e) => setFilterDate(e.target.value)}
-                className="border border-gray-300 rounded-lg px-4 py-1 focus:outline-none focus:ring-2 focus:ring-[#229ea6] focus:border-[#229ea6] transition-all duration-300 bg-white text-gray-800 text-lg"
+                className="border border-gray-300 rounded-lg px-4 py-1 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all duration-300 bg-white text-gray-800 text-lg"
               />
               <button
                 onClick={() => setFilterDate("")}
-                className="px-4 py-2 bg-[#229ea6] text-white rounded-md"
+                className="px-4 py-2 bg-red-600 text-white rounded-md"
               >
                 Clear
               </button>
@@ -90,7 +90,7 @@ const Tasks = () => {
               onClick={() => setOpen(true)}
               label="Create Task"
               icon={<IoMdAdd className="text-lg" />}
-              className="flex flex-row-reverse gap-1 items-center bg-[#229ea6] text-white rounded-md py-2 2xl:py-2.5"
+              className="flex flex-row-reverse gap-1 items-center bg-red-600 text-white rounded-md py-2 2xl:py-2.5"
             />
           )}
         </div>

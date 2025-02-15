@@ -123,7 +123,7 @@ const TaskDialog = ({ task }) => {
                     {({ active }) => (
                       <button
                         onClick={el?.onClick}
-                        className={`${active ? "bg-[#229ea6] text-white" : "text-gray-900"
+                        className={`${active ? "bg-red-600 text-white" : "text-gray-900"
                           } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                         {el.icon}
