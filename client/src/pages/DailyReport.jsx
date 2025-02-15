@@ -19,7 +19,7 @@ const DailyReport = () => {
 
   const fetchReports = async () => {
     try {
-      const response = await axios.get(`https://tm-main-server.onrender.com/api/daily-reports/${user._id}`);
+      const response = await axios.get(`https://vigilxhub-backend.onrender.com/api/daily-reports/${user._id}`);
       const sortedReports = response.data.sort((a, b) =>
         new Date(b.createdAt || b.dateTime) - new Date(a.createdAt || a.dateTime)
       );
@@ -37,7 +37,7 @@ const DailyReport = () => {
       if (editingReport) {
         try {
           const updatedReport = { content, remark: editingReport.remark };
-          await axios.put(`https://tm-main-server.onrender.com/api/daily-reports/${editingReport._id}`, updatedReport);
+          await axios.put(`https://vigilxhub-backend.onrender.com/api/daily-reports/${editingReport._id}`, updatedReport);
 
           setReports((prevReports) =>
             prevReports.map((report) =>
@@ -70,7 +70,7 @@ const DailyReport = () => {
             remark: "",
           };
 
-          await axios.post("https://tm-main-server.onrender.com/api/daily-reports", newReport);
+          await axios.post("https://vigilxhub-backend.onrender.com/api/daily-reports", newReport);
           setContent("");
           fetchReports();
           toast.success("Report submitted successfully!", {
@@ -104,7 +104,7 @@ const DailyReport = () => {
 
   const handleStatusChange = async (id, status) => {
     try {
-      await axios.put(`https://tm-main-server.onrender.com/api/daily-reports/${id}`, { status });
+      await axios.put(`https://vigilxhub-backend.onrender.com/api/daily-reports/${id}`, { status });
       setReports((prevReports) =>
         prevReports.map((report) => (report._id === id ? { ...report, status } : report))
       );
@@ -125,7 +125,7 @@ const DailyReport = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://tm-main-server.onrender.com/api/daily-reports/${id}`);
+      await axios.delete(`https://vigilxhub-backend.onrender.com/api/daily-reports/${id}`);
       setReports((prevReports) => prevReports.filter((report) => report._id !== id));
       toast.success("Report deleted successfully!", {
         style: {
