@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const connectDB = async () => {
 
   try {
-    const con = await mongoose.connect("mongodb+srv://muthu:12345@muthu.s0djk.mongodb.net/")
+    const con = await mongoose.connect("mongodb+srv://muthukdm45:12345@hub1.nc8y5.mongodb.net/")
     console.log("DB Connected");
   } catch (err) {
     console.log(`Error - ${err}`);
